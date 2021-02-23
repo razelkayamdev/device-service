@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "0e706877-fbb0-436c-8481-b6964615cf48",
+		"name": "device-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/health",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET devices (non deleted)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/devices",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET deleted devices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/devices/deleted",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"devices",
+						"deleted"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET device by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/devices/device02",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"devices",
+						"device02"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/devices/?id=device01&crane_id=crane101&s_n=5234934889&model=hawkeye 5&description=That’s a great device",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"devices",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "device01"
+						},
+						{
+							"key": "crane_id",
+							"value": "crane101"
+						},
+						{
+							"key": "s_n",
+							"value": "5234934889"
+						},
+						{
+							"key": "model",
+							"value": "hawkeye 5"
+						},
+						{
+							"key": "description",
+							"value": "That’s a great device"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT device",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/devices/device01?description=the best device NOA!&model=new model",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"devices",
+						"device01"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "the best device NOA!"
+						},
+						{
+							"key": "model",
+							"value": "new model"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE device",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/devices/device01",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"devices",
+						"device01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RESTORE device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/devices/deleted/ddd/restore",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"devices",
+						"deleted",
+						"ddd",
+						"restore"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

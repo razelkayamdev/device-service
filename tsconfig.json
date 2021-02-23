@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "ES2015"
+    ],
+    "strictNullChecks": true,
+    "strict": true,
+    "outDir": "build",
+    "rootDir": "src"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "Database",
+    "Playground",
+    "Tests/"
+  ]
+}
